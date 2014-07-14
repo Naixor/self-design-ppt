@@ -6,12 +6,15 @@
 	<style>
 		html {
 			overflow: hidden;
+			background: -webkit-linear-gradient(top, #eee, #fff);
 		}
 		.container {
 			text-align: center;
 		}
 		#slider {
 			margin: 0px auto;
+			width: 900px;
+			border: 5px 5px -webkit-linear-gradient(top, #eee, #000);
 		}
 		.templatemo_slider {
 			position: relative;
@@ -100,7 +103,12 @@
         		}, 1000);
         		return false;
         	};
+        }).resize(function (){
+        	var h = $(window).height();
+        	$('#slider').width(h*1025/768);
         });
+        
+        
     });
 	</script>
 </body>
