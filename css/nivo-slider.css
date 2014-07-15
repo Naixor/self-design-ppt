@@ -119,3 +119,43 @@
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+
+.copyright {
+	position: fixed;
+	top: 90%;
+	right: 0;
+	height: 26px;
+	width: 120px;
+	font-size: 14px;
+}
+.copyright a {
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right:-120px;
+	z-index: 999;
+	border-bottom: 1px solid #000;
+	line-height: 0px;
+	transition: right 0.8s ease-in;
+	-webkit-transition: right 0.8s ease-in-out;
+	-moz-transition: right 0.8s ease-in-out;
+	-o-transition: right 0.8s ease-in-out;
+	-ms-transition: right 0.8s ease-in-out;
+}
+.copyright a:hover{
+	right: 0;
+}
+.copyright a > img {
+	width: 25px;
+	height: 25px;
+	margin-top: 1px;
+	margin-left: -25px;
+}
+.copyright a > p {
+	font-size: 10px;
+	height: 100%;
+	margin-top: -12px;
+	margin-left: 4px;
+}
